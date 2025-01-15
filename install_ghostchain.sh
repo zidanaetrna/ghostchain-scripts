@@ -1,6 +1,8 @@
 #!/bin/bash
 
+# Script by: Zidan
 
+# Display ASCII Art and Telegram Channel
 echo -e '\e[94m'
 echo -e '██████  ██    ██ ████████ ████████  ██████  ███    ██'
 echo -e '██   ██ ██    ██    ██       ██    ██    ██ ████   ██'
@@ -10,13 +12,13 @@ echo -e '██████   ██████     ██       ██     █
 echo -e '                                                    '
 echo -e '\e[0m'
 echo -e "Join our Telegram channel: https://t.me/AirdropsButton"
-echo -e "script by zidan"
-echo -e " thanks to adolf tjep"
-
+echo -e "script build by zidan | Hanami"
+echo -e "thanks to adolf tjep"
+echo -e "by button for community<3"
 # Update system and install essential packages
 echo "Updating system and installing essential packages..."
 apt update
-apt install -y ufw build-essential clang curl git make libssl-dev llvm libudev-dev protobuf-compiler
+apt install -y ufw build-essential clang curl git make libssl-dev llvm libudev-dev protobuf-compiler libc-dev
 
 # UFW configuration
 echo "Configuring UFW..."
@@ -35,12 +37,12 @@ rustup default stable
 rustup update
 rustup update nightly
 rustup target add wasm32-unknown-unknown --toolchain nightly
-rustup target add wasm32-unknown-unknown --toolchain stable-x86_64-unknown-linux-gnu
+rustup target add wasm32-unknown-unknown --toolchain stable
 
 # Handle potential Rust errors
-echo "Adding Rust targets in case of errors..."
-rustup target add wasm32-unknown-unknown --toolchain default || true
-rustup component add rust-src --toolchain default || true
+echo "Adding Rust components and targets in case of errors..."
+rustup target add wasm32-unknown-unknown || true
+rustup component add rust-src || true
 
 # Clone and build Ghostchain
 echo "Cloning and building Ghostchain..."
