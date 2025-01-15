@@ -1,5 +1,18 @@
 #!/bin/bash
 
+
+echo -e '\e[94m'
+echo -e '██████  ██    ██ ████████ ████████  ██████  ███    ██'
+echo -e '██   ██ ██    ██    ██       ██    ██    ██ ████   ██'
+echo -e '██████  ██    ██    ██       ██    ██    ██ ██ ██  ██'
+echo -e '██   ██ ██    ██    ██       ██    ██    ██ ██  ██ ██'
+echo -e '██████   ██████     ██       ██     ██████  ██   ████'
+echo -e '                                                    '
+echo -e '\e[0m'
+echo -e "Join our Telegram channel: https://t.me/AirdropsButton"
+echo -e "script by zidan"
+echo -e " thanks to adolf tjep"
+
 # Update system and install essential packages
 echo "Updating system and installing essential packages..."
 apt update
