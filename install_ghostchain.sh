@@ -12,9 +12,7 @@ echo -e '██████   ██████     ██       ██     █
 echo -e '                                                    '
 echo -e '\e[0m'
 echo -e "Join our Telegram channel: https://t.me/AirdropsButton"
-echo -e "script build by zidan | Hanami"
-echo -e "thanks to adolf tjep"
-echo -e "by button for community<3"
+
 # Update system and install essential packages
 echo "Updating system and installing essential packages..."
 apt update
